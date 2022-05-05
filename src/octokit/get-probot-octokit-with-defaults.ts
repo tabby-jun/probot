@@ -11,7 +11,7 @@ type Options = {
   Octokit: typeof ProbotOctokit;
   log: Logger;
   githubToken?: string;
-  appId?: number;
+  appId?: string;
   privateKey?: string;
   redisConfig?: Redis.RedisOptions | string;
   baseUrl?: string;

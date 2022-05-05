@@ -64,7 +64,7 @@ export class Probot {
     const Octokit = getProbotOctokitWithDefaults({
       githubToken: options.githubToken,
       Octokit: options.Octokit || ProbotOctokit,
-      appId: Number(options.appId),
+      appId: String(options.appId),
       privateKey: options.privateKey,
       cache,
       log: this.log,
